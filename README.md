@@ -384,4 +384,33 @@ font-size: 80px;
   
   
   /*********************************/
- 
+ turnon off light
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+  .unic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="hello">
+        <h1 style="text-align: center;">can you turn on</h1>
+       <div class="unic"> <button onclick="document.getElementById('myimages').src='images/lighton.jpg'">turnon</button>
+        <img src="images/lightof.jpg" alt="lightoff" id="myimages">
+        <button onclick="document.getElementById('myimages').src='images/lightof.jpg'">turnof</button>
+    </div></div>
+</body>
+</html>
