@@ -1,3 +1,213 @@
+ practice
+    /*console.log("helo")
+
+var name="shubham";
+var myage=23;
+console.log(true&&true)
+class Person {
+
+    constructor(name) {
+      this.name = name;
+    }
+  
+    introduce() {
+      console.log(`Hello, my name is ${this.name}`);
+    }
+  
+  }
+  
+  const otto = new Person('Otto');
+  
+  otto.introduce();
+
+let a = ""+12+12;
+console.log(a);
+console.log(typeof(a))
+var imuseless=null;
+NaN===NaN;
+console.log(imuseless)
+console.log(Number.isNaN(NaN))
+console.log(5+5.00)
+var a=5
+var b=5
+console.log("hello"+(a==b))
+console.log(3+4)
+console.log(40%5)
+var  num=15
+var numf=num++
+console.log(num)
+console.log(numf)
+var  num=15
+var numf=++num
+console.log(num)
+console.log(numf)
+var d=30
+
+var c=-20
+console.log(a&b)
+console.log((d&&c))
+console.log(a>b||b>a)
+console.log(3**3)
+var f=2
+var y=5
+f=(f&y)|y
+y=(f&y)|y
+console.log(f,y)*/
+
+
+
+//conditional 
+/*var tommotrote=true
+var today=false;
+console.log(today)
+var today=2020
+if(score =0)
+{
+    console.log("we loss")
+}
+else{
+    console.log("we won ")
+}*/
+/*
+var sa=20
+;
+
+sa>10?console.log("you can vote "):console.log("you cannot vote");
+*/
+/*var area="circle";
+switch(area)
+{
+case 'circle':
+    console.log("hello")
+    break
+
+
+}
+
+
+var i=0;
+
+while(i<10)
+{
+
+    console.log(i)
+    i++
+}
+
+var num1=30;
+var h=0;
+do{
+ 
+ console.log(h);
+h++
+}
+while(h<10);
+
+
+for(var i=0;i<=5;i++)
+{
+console.log(i)
+
+}
+
+var a=2;
+for(var i=1;i<=10;i++)
+{
+console.log(a+" * "+i+" = "+(a*i))
+
+
+function d()
+{
+var a=0
+var b=10
+sum=a+b;
+console.log(sum)
+}
+
+d()
+
+function  mult(a,b=5)
+{
+return a*b
+
+}
+console.log(mult(3,7)) 
+
+let a=7,b=6
+ const sum=()=>`the sum is ${a+b}`
+ console.log(sum());
+
+ public static function(a,b)
+
+class Polygon {
+
+    constructor() {
+       this.name = 'Polygon';
+         }
+       fun()
+         {
+             var name
+             this.name='hello'
+             console.log(name)
+         }
+  }
+  
+  
+  const poly1 = new Polygon();
+console.log(poly1.name)
+console.log(poly1.fun)
+  // expected output: "Polygon"
+  
+
+  
+  const o=()=>{var my=new Array;
+    var names =['shubham ','sdf'];
+    
+
+console.log(names.indexOf('thapa'))
+const count=names.unshift('chickemn')
+console.log(count)
+  for(var x=0;x<names.length;x++)
+  {console.log(names[x]);}
+return names;}
+console.log(o());
+
+var  sirnames =['bhargava','sharma','jain']
+sirnames.sort();
+
+for(Element of sirnames)
+
+    
+{
+console.log(Element)
+
+
+
+let f=[1,2,3,4,5]
+let arr=f.map((V)=>V*2).filter((CurElem)=> CurElem>4).reduce((accumulator,CurElm)=>{return accumulator +=CurElm},10)
+console.log(arr)
+var str="apple,banana"
+//let res=str.slice(str.indexOf("banana"),str.length)
+let res=str.slice(6,12)
+console.log(res,str.length)
+var d='heeloo';
+let fd=d.charCodeAt(2)
+let fd2=d.charCodeAt(2)
+let fd3=d.repeat(2)
+console.log(fd)
+console.log(fd2)
+console.log(fd3)
+//let df=d.charCodeAt(d.lastIndexOf(d.charAt(d.length-1)))
+var d='heeloo';
+let df=d.charCodeAt(d.length)
+console.log(df)
+
+var sr='shusm'
+console.log(sr[0])
+
+console.log(Math.trunc(-2.02555))
+*/
+var x=["sdf","",""]
 # javascript-hackls
 1.how to centre a flexbox on screen
 <html lang="en">
@@ -174,4 +384,4 @@ font-size: 80px;
   
   
   /*********************************/
-  
+ 
