@@ -414,3 +414,88 @@ font-size: 80px;
     </div></div>
 </body>
 </html>
+ 
+ temperature conversion app
+ html:
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="container">
+ <form id="tempCalc" onsubmit="calculatetemp()">
+     <label for="temp">please enter temp to convert</label>
+     <br/>
+     <input type="number" style="margin-left: 30;" name="temp" id="temp">
+     <select name="temp-diff" id="temp_diff">
+         <option value="cel">celsius</option>
+         <option value="fah">fahrenheit</option>
+     </select>
+     <br/><input type="submit" style="margin:0 70;background-color:black;color:white">
+     <br/><span id="result"></span>
+     </form>
+ </div>
+ <script src="temperatureform.js"></script>  
+</body>
+</html>
+ css:
+ body{
+
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(235, 235, 18);
+}
+.container{
+    background-color: rgb(73, 137, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  vertical-align: middle;
+  height: 15%;
+}
+#temp{
+
+width: 50px;
+margin: 5px 5px;
+
+}
+label{
+    margin:0 20px;
+}
+ javascript:
+ const calculatetemp=()=>{
+    const numbertemp=document.getElementById('temp').value;
+    const temp_selected=document.getElementById('temp_diff');
+    const value =temp_diff.options[temp_selected.selectedIndex].value;
+   console.log(value);
+   const celtofah=(cel)=>{
+
+   let fahrenheit=Math.round((cel*9/5)+32);
+   return fahrenheit;
+   }
+   const fahtocel=(fah)=>{
+
+    let celecius=Math.round((fah-32)*5/9);
+    return celecius;
+    }
+  
+  
+   let result;
+   if(value=='fah')
+   {
+   result=celtofah(numbertemp);
+   document.getElementById('result').innerHTML=`${result}fah`;
+
+   }
+   else(value=='cel')
+   {
+   result=fahtocel(numbertemp);
+   document.getElementById('result').innerHTML=`${result}celcius`;
+
+   }
+}
