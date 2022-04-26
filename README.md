@@ -499,3 +499,16 @@ label{
 
    }
 }
+ 
+ how to access dataset of multiple class with same name
+ html :
+ <div class="user" data-id=360>winter</div>
+    <div class="user" data-id=90>summer</div>
+    <div class="user" data-id=180>spring</div>
+js file:
+ const dd = document.querySelectorAll('.user');
+   dd.forEach((item)=>{
+    item.addEventListener('click',(e)=>{
+        console.log(e.target.dataset.id)
+     })
+   })
